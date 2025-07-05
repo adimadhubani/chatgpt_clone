@@ -167,6 +167,7 @@ const DEEPSEEK_API_URL = "https://api.deepseek.com/v1"; // Verify the correct AP
 exports.summaryController = async (req, res) => {
   try {
     const { text } = req.body;
+    
     const response = await axios.post(
       `${DEEPSEEK_API_URL}/chat/completions`,
       {
@@ -205,6 +206,7 @@ exports.summaryController = async (req, res) => {
 exports.paragraphController = async (req, res) => {
   try {
     const { text } = req.body;
+    console.log(text);
     const response = await axios.post(
       `${DEEPSEEK_API_URL}/chat/completions`,
       {
