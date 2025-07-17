@@ -27,6 +27,7 @@ app.use(morgan("dev"));
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 8080;
+// console.log(process.env.MONGO_URI)
 
 
 //API routes

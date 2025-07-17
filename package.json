@@ -4,8 +4,8 @@
     "scripts": {
         "dev": "concurrently \"cd server && nodemon index.js\" \"cd client && vite dev\"",
         "start": "cd server && node index.js"
-      },
-    "dependencies": {
-      "concurrently": "^8.2.2"
+    },
+    "devDependencies": {
+        "concurrently": "^9.2.0"
     }
-  }
+}

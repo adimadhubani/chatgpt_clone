@@ -4,10 +4,10 @@
   "description": "chatgpt clone",
   "main": "server.js",
   "scripts": {
-    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
-    "build": "cd client && npm run build",
-    "start": "cd server && npm start",
-    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+    "dev": "nodemon server.js",
+    "build": "cd ../client && npm run build",
+    "start": "node server.js",
+    "install-all": "npm install && cd ../client && npm install"
   },
   "author": "aditya",
   "license": "ISC",
